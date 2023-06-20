@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
-* _islower -Check if char is lowercase
+* _islower - Checks if character is lowercase
 * @c: is the char to be checked
 * Return: 1 for lowercase character, otherwise 0.
 */
-int _islower(int)
+int _islower(int c)
 {
 	if (c >= 97 && c <= 122)
 	{
