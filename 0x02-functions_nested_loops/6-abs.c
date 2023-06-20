@@ -1,4 +1,4 @@
-carrie@ubuntu:/debugging$ cat main.c
+carrie@ubuntu : / debugging$ cat main.c
 #include "main.h"
 
 /**
