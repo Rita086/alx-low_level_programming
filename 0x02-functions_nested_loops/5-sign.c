@@ -7,7 +7,7 @@
  *
  * Return: 1 for positive number, -1 for negative number, otherwise 0
  */
-int prints_sign(int j)
+int print_sign(int j)
 {
 	if (j > 0)
 	{
