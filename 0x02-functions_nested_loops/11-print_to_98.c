@@ -29,14 +29,14 @@ void print_to_98(int d)
 	{
 	if (d = 98)
 	{
-       	printf("%d" d);
-        printf("\n");
-        break;
-        }
-        else
+	printf("%d" d);
+	printf("\n");
+	break;
+	}
+	else
 	{
 	printf("%d, ", d);
-        }
-        }
+	}
+	}
 	}
 }
