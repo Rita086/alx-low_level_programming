@@ -11,9 +11,9 @@ int main(void)
 	printf("Infinite loop incoming :|\n");
 	a = 0;
 	/*while (a < 10)*/
-	/*{*/
+	/*(*/
 	/*  putchar(a)*/
-	/*}*/
+	/*)*/
 	printf("Infinite loop avoided! \\0/\n");
 	return (0);
 }
