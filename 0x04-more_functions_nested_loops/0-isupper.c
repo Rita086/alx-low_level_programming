@@ -1,14 +1,15 @@
+#include <ctype.h>
 #include "main.h"
 #include <stdio.h>
 
 /**
  * _isupper - uppercase letter
- * @y: check the char
+ * @c: check the char
  * Return: 1 for upper letter, otherwise 0
  */
-int _isupper(int y)
+int _isupper(int c)
 {
-	if(y >= 'A' && y <= 'Z')
+	if(c >= 'A' && c <= 'Z')
 	return (1);
 	else
 	return (0);
