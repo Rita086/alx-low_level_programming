@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+#include <math.h>
 
 /*
  * main - the largest prime factor of 612852475143 to be found and printed 
@@ -30,6 +31,6 @@ int main(void)
 	}
 	if (z > 2)
 		max = z;
-	printf("%d\n", max);
+	printf("%ld\n", max);
 	return (0);
 }
