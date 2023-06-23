@@ -30,6 +30,6 @@ int main(void)
 	}
 	if (z > 2)
 		max = z;
-	printf("%|d\n", max);
+	printf("%d\n", max);
 	return (0);
 }
