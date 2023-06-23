@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 #include <unistd.h>
 /**
  * _putchar - Writs the character of c to stdout
