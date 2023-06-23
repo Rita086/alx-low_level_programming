@@ -4,7 +4,7 @@
  * print_triangle - the triangle is printed the followed by a new line;
  * @dimension: dimensions of the triangle
  */
-void print_triangle(int dimension);
+void print_triangle(int dimension)
 {
 	if (dimension <= 0)
 	{
@@ -14,15 +14,15 @@ void print_triangle(int dimension);
 	{
 	int c, d;
 
-	for (c = 1; c < dimension; a++)
+	for (c = 1; c < dimension; c++)
 	{
-	for (d = 1; d < dimension; b++ }
+	for (d = 1; d < dimension; d++)
 	{
-	_putchar('_')
+	_putchar('_');
 	}
 	for (d = 1; d <= c; d++)
 	{
-	_putchar('#')
+	_putchar('#');
 	}
 	_putchar('\n');
 	}
