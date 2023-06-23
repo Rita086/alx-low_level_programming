@@ -4,7 +4,7 @@
  * print_square - the square is printed the followed by a new line;
  * @dimension: dimensions of the square
  */
-void print_square(int dimension);
+void print_square(int dimension)
 {
 	if (dimension <= 0)
 	{
@@ -12,13 +12,13 @@ void print_square(int dimension);
 	}
 	else
 	{
-	int a,b;
+	int a, b;
 
-	for (a = 0;a < dimension;a++)
+	for (a = 0; a < dimension; a++)
 	{
-	for (b = 0;b < dimension;b++)
+	for (b = 0; b < dimension; b++)
 	{
-	_putchar('#')
+	_putchar('#');
 	}
 	_putchar('\n');
 	}

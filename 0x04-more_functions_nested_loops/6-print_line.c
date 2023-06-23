@@ -4,7 +4,7 @@
  * print_line - Draw a straight line in the terminal
  * @s: counts the times the integer should be printed
  */
-void print_line(int s);
+void print_line(int s)
 {
 	if (s <= 0)
 	{
