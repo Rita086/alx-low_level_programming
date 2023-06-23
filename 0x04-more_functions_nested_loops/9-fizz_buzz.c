@@ -28,8 +28,8 @@ int main(void)
 	else if (m == 1)
 	{
 	printf("%d", m);
-	{
-	else 
+	}
+	else
 	{
 	printf(" %d", m);
 	}
