@@ -4,16 +4,16 @@
  * print_number - A number is printed
  * @a: Number that is printed
  */
-void print_number(int a);
+void print_number(int a)
 {
 	unsigned int a1;
 
 	if (a < 0)
 	{
-	a1 = =a;
+	a1 = -a;
 	_putchar('-');
 	}
-	else 
+	else
 	{
 	a1 = a;
 	}
@@ -21,5 +21,5 @@ void print_number(int a);
 	{
 	print_number(a1 / 10);
 	}
-	_putchar((a1 % 10) + '0';
+	_putchar((a1 % 10) + '0');
 }
