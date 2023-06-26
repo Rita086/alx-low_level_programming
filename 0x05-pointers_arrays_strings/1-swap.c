@@ -1,5 +1,5 @@
 #include <stdio.h>
-/*
+/**
  * swap_int - the value of two int to be swapped
  * @a: the first int to be swapped
  * @b: the second int to be swapped
