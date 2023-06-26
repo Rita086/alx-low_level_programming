@@ -3,6 +3,7 @@
  *_strcpy - a string to be printed
  * @dest: value to be destinated
  * @src: source value
+ * Return: the pointer to dest
  */
 char *_strcpy(char *dest, char *src)
 {

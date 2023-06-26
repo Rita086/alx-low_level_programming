@@ -11,12 +11,12 @@ void puts2(char *str)
 	char *j = str;
 	int p;
 
-	while (*j!= '\0')
+	while (*j != '\0')
 	{
 	j++;
 	longi++;
 	}
-	k = longi -1;
+	k = longi - 1;
 	for (p = 0; p <= k; p++)
 	{
 	if (p % 2 == 0)
