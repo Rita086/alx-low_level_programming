@@ -21,7 +21,7 @@ int _atoi(char *s)
 	{
 	isi = 1;
 	ni = (ni * 10) + (s[k] - '0');
-	k++
+	k++;
 	}
 	if (isi == 1)
 	{
