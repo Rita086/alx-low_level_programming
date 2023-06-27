@@ -8,12 +8,12 @@
  */
 void print_array(int *a, int n)
 {
-	int m;
+	int j;
 
-	for (m = 0; m < n; m++)
+	for (j = 0; j < n; j++)
 	{
-	printf("%d", a[m]);
-	if (m != (n - 1))
+	printf("%d", a[j]);
+	if (j != (n - 1))
 	{
 	printf(", ");
 	}
