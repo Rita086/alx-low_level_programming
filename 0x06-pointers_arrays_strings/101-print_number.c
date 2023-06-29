@@ -1,7 +1,6 @@
 #include "main.h"
 
 /**
- * 
  * print_number - chars of numbers is printed
  * @n: integer of params
  * Return: 0
@@ -9,7 +8,9 @@
 void print_number(int n)
 {
 	unsigned int n1;
+
 	n1 = n;
+
 	if (n < 0)
 	{
 	_putchar('-');
