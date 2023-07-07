@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * main - the minimum number of coins is printed to make a balance for a certain amount of money
+ * main - the minimum numb of coins is printed to make a balance for money
  * @argc: number of arguments
  * @argv: array of arguments
  *
@@ -11,13 +11,13 @@
  */
 int main(int argc, char *argv[])
 {
-	int num,m, result;
+	int num, m, result;
 	int coins[] = {25, 10, 5, 2, 1};
 
 	if (argc != 2)
 	{
-	 printf("Error\n");
-	 return (1);
+	printf("Error\n");
+	return (1);
 	}
 	num = atoi(argv[1]);
 	result = 0;
