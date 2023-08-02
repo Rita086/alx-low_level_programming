@@ -5,7 +5,7 @@
 /**
  * insert_nodeint_at_index - a new node in a linked
  * list at a given point is inserted
- * @head indicator to the first node
+ * @head: indicator to the first node
  * @idx: index where the new node is added
  * @n: data to insert in the new node
  *
