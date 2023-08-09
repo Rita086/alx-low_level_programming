@@ -9,19 +9,19 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int th, g, len = 0;
+	int th, g, num = 0;
 
 	if (filename == NULL)
 		return (-1);
 	if (text_content != NULL)
 	{
-	for (len = 0; text_content[len];)
-		len++;
+	for (num = 0; text_content[num];)
+		num++;
 	}
 	th = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
-	g = write(fd, text_content, len);
+	g = write(th, text_content, num);
 	if (th == -1 || g == -1)
-		return (-1)
+		return (-1);
 	close(th);
 	return (1);
 }
