@@ -85,7 +85,8 @@ void print_class(unsigned char *e_ident)
  * print_data - outputs the data of an ELF header.
  * @e_ident: A pointer to an array containing the ELF class.
  */
-void print_data(unsigned char *e_ident){
+void print_data(unsigned char *e_ident)
+{
 	printf(" Data: ");
 
 	switch (e_ident[EI_DATA])
@@ -164,8 +165,9 @@ void print_osabi(unsigned char *e_ident)
 			printf("<unknown: %x>\n", e_ident[EI_OSABI]);
 	}
 }
+
 /**
- * print_abi - outputs the ABI version of an ELF header.
+ * print_osabi - outputs the ABI version of an ELF header.
  * @e_ident: A pointer to an array that contains the ELF ABI version.
  */
 void print_abi(unsigned char *e_ident)
@@ -173,6 +175,7 @@ void print_abi(unsigned char *e_ident)
 	printf(" ABI Version: %d\n",
 			e_ident[EI_ABIVERSION]);
 }
+
 /**
  * print_type - outputs the type of an ELF header.
  * e_type: The ELF type.
@@ -205,6 +208,7 @@ void print_type(unsigned int e_type, unsigned char *e_ident)
 			printf("<unknown: %x>\n", e_type);
 	}
 }
+
 /**
  * print_entry - outputs the entry point of an ELF header.
  * @e_entry: The address of the ELF entry point.
@@ -227,6 +231,7 @@ void print_entry(unsigned long int e_entry, unsigned char *e_ident)
 	else
 		printf("%#lx\n", e_entry);
 }
+
 /**
  * close_elf - terminates an ELF file.
  * @elf: The file caption of the ELF file
@@ -242,6 +247,7 @@ void close_elf(int elf)
 		exit(98);
 	}
 }
+
 /**
  * main - Displays the data contained contained in the ELF header
  * at the start of an ELF file.
