@@ -1,5 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
-
 /**
  * append_text_to_file - attach text at the end of a file.
  * @filename: An indicator to the name of the file.
@@ -10,17 +11,17 @@
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
-	int p, q, len = 0;
+	int p, q, num = 0;
 
 	if (filename == NULL)
 		return (-1);
 	if (text_content != NULL)
 	{
-	for (len = 0; text_content[len];)
-		len++;
+	for (num = 0; text_content[num];)
+		num++;
 	}
 	p = open(filename, O_WRONLY | O_APPEND);
-	q = write(o, text_content, len);
+	q = write(p, text_content, num);
 	if (p == -1 || q == -1)
 		return (-1);
 	close(p);
