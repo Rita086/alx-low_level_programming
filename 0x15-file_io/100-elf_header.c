@@ -244,8 +244,10 @@ void print_entry(unsigned long int e_entry, unsigned char *e_ident)
  *
  * Description: If the file cannot be closed - exit code 98.
  */
-void close_elf(int elf)
+void close_elf
 {
+	int elf
+
 	if (close(elf) == -1)
 	{
 	dprintf(STDERR_FILENO,
