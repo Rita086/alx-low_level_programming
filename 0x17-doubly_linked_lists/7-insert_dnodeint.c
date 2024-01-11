@@ -1,19 +1,20 @@
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 #include "lists.h"
-
 /**
- * insert_dnodeint_at_index - inserts a new node at
- * a given position
+ * insert_dnodeint_at_index - positions a new node at a given position
  *
  * @h: head of the list
  * @idx: index of the new node
  * @n: value of the new node
- * Return: the address of the new node, or NULL if it failed
+ * Return: the address of the new node, otherwie NULL 
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	dlistint_t *new;
 	dlistint_t *head;
-	unsigned int i;
+	unsigned int k;
 
 	new = NULL;
 	if (idx == 0)
@@ -21,13 +22,13 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	else
 	{
 		head = *h;
-		i = 1;
+		k = 1;
 		if (head != NULL)
 			while (head->prev != NULL)
 				head = head->prev;
 		while (head != NULL)
 		{
-			if (i == idx)
+			if (k == idx)
 			{
 				if (head->next == NULL)
 					new = add_dnodeint_end(h, n);
@@ -46,7 +47,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 				break;
 			}
 			head = head->next;
-			i++;
+			k++;
 		}
 	}
 
