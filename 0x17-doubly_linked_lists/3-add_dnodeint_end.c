@@ -1,8 +1,9 @@
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 #include "lists.h"
-
 /**
- * add_dnodeint_end - adds a new node at the end
- * of a dlistint_t list
+ * add_dnodeint_end - multiples a new node at the end of a dlistint_t list
  *
  * @head: head of the list
  * @n: value of the element
