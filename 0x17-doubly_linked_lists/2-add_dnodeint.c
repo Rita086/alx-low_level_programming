@@ -1,10 +1,10 @@
-include "lists.h"
-
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include "lists.h"
 /**
- * add_dnodeint - adds a new node at the beginning
- * of a dlistint_t list
- *
- * @head: head of the list
+ * add_dnodeint - sum a new node at the start of a dlistint_t list
+ * @head:  list that heads
  * @n: value of the element
  * Return: the address of the new element
  */
@@ -34,6 +34,4 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 
         *head = new;
 	return (new);
-}
-
--- INSERT --                                                                                                                      11,1          Topi
+}  
